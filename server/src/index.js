@@ -123,7 +123,7 @@ router.post('/update', ctx => {
             let product = products[index];
             product.name = name;
             product.type = type;
-            product.rooms = rooms;
+            product.quantity = quantity;
             ctx.response.body = product;
             ctx.response.status = 200;
         }
